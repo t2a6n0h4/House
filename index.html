@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+</head>
+<body onload = "main()">
+    <canvas id = "webgl" width="400" height="400"></canvas>
+    <form name="myform">
+        <p>
+            <p><b>Quay đối tượng</b></p>
+            <button type="button" onclick="doi()" style="width: 120px; margin-right: 10px">Đổi hướng</button>
+            <button type="button" onclick="dung()" style="width: 120px; margin-right: 10px">Dừng</button>
+            <button type="button" onclick="tiep()" style="width: 120px; margin-right: 10px">Tiếp</button>
+            
+            
+            <p><b>Hướng nhìn</b></p>
+            <p>Vị trí của mắt nhìn </p>
+            <input type="text" name="eX" size="5">
+            <input type="text" name="eY" size="5">
+            <input type="text" name="eZ" size="5">
+            <p>Vị trí của điểm nhìn </p>
+            <input type="text" name="aX" size="5">
+            <input type="text" name="aY" size="5">
+            <input type="text" name="aZ" size="5">
+            <p>Hướng </p>
+            <input type="text" name="uX" size="5">
+            <input type="text" name="uY" size="5">
+            <input type="text" name="uZ" size="5">
+            <input type="button" id="btt" value="Thay đổi">
+
+            <p><b>Chiếu sáng</b></p>
+            <input type="radio" name="nut" onclick="tat()"> Tắt chiếu sáng 
+            <input type="radio" name="nut" onclick="bat()"> Bật chiếu sáng <br>
+            <p><b>Màu ánh sáng</b></p>
+            <input type="text" name="r" size="5">
+            <input type="text" name="g" size="5">
+            <input type="text" name="b" size="5">
+            <input type="button" id="btt" onclick="doimau()" value="Đổi" >
+        </p>
+
+    </form>
+        
+    <script src = "cuon-matrix.js"></script>
+    <script src = "cuon-utils.js"></script>
+    <script src = "webgl-debug.js"></script>
+    <script src = "webgl-utils.js"></script>
+    <script src = "final.js"></script>
+</body>
+</html>
